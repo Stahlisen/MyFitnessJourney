@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F279E891A802E2400A9A94E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F279E881A802E2400A9A94E /* main.m */; };
+		2F279E8C1A802E2400A9A94E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F279E8B1A802E2400A9A94E /* AppDelegate.m */; };
+		2F279E951A802E2400A9A94E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F279E931A802E2400A9A94E /* Main.storyboard */; };
+		2F279E971A802E2400A9A94E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F279E961A802E2400A9A94E /* Images.xcassets */; };
+		2F279E9A1A802E2400A9A94E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F279E981A802E2400A9A94E /* LaunchScreen.xib */; };
+		2F279EA61A802E2400A9A94E /* MyFitnessJourneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F279EA51A802E2400A9A94E /* MyFitnessJourneyTests.m */; };
+		2F279EB11A8036CE00A9A94E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F279EB01A8036CE00A9A94E /* LoginViewController.m */; };
+		2F279EB41A80373900A9A94E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F279EB31A80373900A9A94E /* HomeViewController.m */; };
+		2F279EB71A80376C00A9A94E /* JourneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F279EB61A80376C00A9A94E /* JourneyViewController.m */; };
+		2F279FEC1A8039BD00A9A94E /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F279FEB1A8039BD00A9A94E /* FacebookSDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F279EA01A802E2400A9A94E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F279E7B1A802E2400A9A94E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F279E821A802E2400A9A94E;
+			remoteInfo = MyFitnessJourney;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F279E831A802E2400A9A94E /* MyFitnessJourney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFitnessJourney.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F279E871A802E2400A9A94E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F279E881A802E2400A9A94E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F279E8A1A802E2400A9A94E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F279E8B1A802E2400A9A94E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F279E941A802E2400A9A94E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F279E961A802E2400A9A94E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2F279E991A802E2400A9A94E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2F279E9F1A802E2400A9A94E /* MyFitnessJourneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFitnessJourneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F279EA41A802E2400A9A94E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F279EA51A802E2400A9A94E /* MyFitnessJourneyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFitnessJourneyTests.m; sourceTree = "<group>"; };
+		2F279EAF1A8036CE00A9A94E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		2F279EB01A8036CE00A9A94E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		2F279EB21A80373900A9A94E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		2F279EB31A80373900A9A94E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		2F279EB51A80376C00A9A94E /* JourneyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JourneyViewController.h; sourceTree = "<group>"; };
+		2F279EB61A80376C00A9A94E /* JourneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JourneyViewController.m; sourceTree = "<group>"; };
+		2F279FEB1A8039BD00A9A94E /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F279E801A802E2400A9A94E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F279FEC1A8039BD00A9A94E /* FacebookSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F279E9C1A802E2400A9A94E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F279E7A1A802E2300A9A94E = {
+			isa = PBXGroup;
+			children = (
+				2F279FEB1A8039BD00A9A94E /* FacebookSDK.framework */,
+				2F279E851A802E2400A9A94E /* MyFitnessJourney */,
+				2F279EA21A802E2400A9A94E /* MyFitnessJourneyTests */,
+				2F279E841A802E2400A9A94E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F279E841A802E2400A9A94E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F279E831A802E2400A9A94E /* MyFitnessJourney.app */,
+				2F279E9F1A802E2400A9A94E /* MyFitnessJourneyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F279E851A802E2400A9A94E /* MyFitnessJourney */ = {
+			isa = PBXGroup;
+			children = (
+				2F279E8A1A802E2400A9A94E /* AppDelegate.h */,
+				2F279E8B1A802E2400A9A94E /* AppDelegate.m */,
+				2F279EAF1A8036CE00A9A94E /* LoginViewController.h */,
+				2F279EB01A8036CE00A9A94E /* LoginViewController.m */,
+				2F279EB21A80373900A9A94E /* HomeViewController.h */,
+				2F279EB31A80373900A9A94E /* HomeViewController.m */,
+				2F279EB51A80376C00A9A94E /* JourneyViewController.h */,
+				2F279EB61A80376C00A9A94E /* JourneyViewController.m */,
+				2F279E931A802E2400A9A94E /* Main.storyboard */,
+				2F279E961A802E2400A9A94E /* Images.xcassets */,
+				2F279E981A802E2400A9A94E /* LaunchScreen.xib */,
+				2F279E861A802E2400A9A94E /* Supporting Files */,
+			);
+			path = MyFitnessJourney;
+			sourceTree = "<group>";
+		};
+		2F279E861A802E2400A9A94E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F279E871A802E2400A9A94E /* Info.plist */,
+				2F279E881A802E2400A9A94E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F279EA21A802E2400A9A94E /* MyFitnessJourneyTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F279EA51A802E2400A9A94E /* MyFitnessJourneyTests.m */,
+				2F279EA31A802E2400A9A94E /* Supporting Files */,
+			);
+			path = MyFitnessJourneyTests;
+			sourceTree = "<group>";
+		};
+		2F279EA31A802E2400A9A94E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F279EA41A802E2400A9A94E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F279E821A802E2400A9A94E /* MyFitnessJourney */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F279EA91A802E2400A9A94E /* Build configuration list for PBXNativeTarget "MyFitnessJourney" */;
+			buildPhases = (
+				2F279E7F1A802E2400A9A94E /* Sources */,
+				2F279E801A802E2400A9A94E /* Frameworks */,
+				2F279E811A802E2400A9A94E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFitnessJourney;
+			productName = MyFitnessJourney;
+			productReference = 2F279E831A802E2400A9A94E /* MyFitnessJourney.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F279E9E1A802E2400A9A94E /* MyFitnessJourneyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F279EAC1A802E2400A9A94E /* Build configuration list for PBXNativeTarget "MyFitnessJourneyTests" */;
+			buildPhases = (
+				2F279E9B1A802E2400A9A94E /* Sources */,
+				2F279E9C1A802E2400A9A94E /* Frameworks */,
+				2F279E9D1A802E2400A9A94E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F279EA11A802E2400A9A94E /* PBXTargetDependency */,
+			);
+			name = MyFitnessJourneyTests;
+			productName = MyFitnessJourneyTests;
+			productReference = 2F279E9F1A802E2400A9A94E /* MyFitnessJourneyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F279E7B1A802E2400A9A94E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Stahlberg Industries";
+				TargetAttributes = {
+					2F279E821A802E2400A9A94E = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 2TBMA377VD;
+					};
+					2F279E9E1A802E2400A9A94E = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 2F279E821A802E2400A9A94E;
+					};
+				};
+			};
+			buildConfigurationList = 2F279E7E1A802E2400A9A94E /* Build configuration list for PBXProject "MyFitnessJourney" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				he,
+			);
+			mainGroup = 2F279E7A1A802E2300A9A94E;
+			productRefGroup = 2F279E841A802E2400A9A94E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F279E821A802E2400A9A94E /* MyFitnessJourney */,
+				2F279E9E1A802E2400A9A94E /* MyFitnessJourneyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F279E811A802E2400A9A94E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F279E951A802E2400A9A94E /* Main.storyboard in Resources */,
+				2F279E9A1A802E2400A9A94E /* LaunchScreen.xib in Resources */,
+				2F279E971A802E2400A9A94E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F279E9D1A802E2400A9A94E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F279E7F1A802E2400A9A94E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F279E8C1A802E2400A9A94E /* AppDelegate.m in Sources */,
+				2F279EB71A80376C00A9A94E /* JourneyViewController.m in Sources */,
+				2F279E891A802E2400A9A94E /* main.m in Sources */,
+				2F279EB11A8036CE00A9A94E /* LoginViewController.m in Sources */,
+				2F279EB41A80373900A9A94E /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F279E9B1A802E2400A9A94E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F279EA61A802E2400A9A94E /* MyFitnessJourneyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F279EA11A802E2400A9A94E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F279E821A802E2400A9A94E /* MyFitnessJourney */;
+			targetProxy = 2F279EA01A802E2400A9A94E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F279E931A802E2400A9A94E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F279E941A802E2400A9A94E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F279E981A802E2400A9A94E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F279E991A802E2400A9A94E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F279EA71A802E2400A9A94E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2F279EA81A802E2400A9A94E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F279EAA1A802E2400A9A94E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/fredrikstahl/Documents/FacebookSDK,
+				);
+				INFOPLIST_FILE = MyFitnessJourney/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2F279EAB1A802E2400A9A94E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/fredrikstahl/Documents/FacebookSDK,
+				);
+				INFOPLIST_FILE = MyFitnessJourney/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2F279EAD1A802E2400A9A94E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyFitnessJourneyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFitnessJourney.app/MyFitnessJourney";
+			};
+			name = Debug;
+		};
+		2F279EAE1A802E2400A9A94E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyFitnessJourneyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyFitnessJourney.app/MyFitnessJourney";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F279E7E1A802E2400A9A94E /* Build configuration list for PBXProject "MyFitnessJourney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F279EA71A802E2400A9A94E /* Debug */,
+				2F279EA81A802E2400A9A94E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F279EA91A802E2400A9A94E /* Build configuration list for PBXNativeTarget "MyFitnessJourney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F279EAA1A802E2400A9A94E /* Debug */,
+				2F279EAB1A802E2400A9A94E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2F279EAC1A802E2400A9A94E /* Build configuration list for PBXNativeTarget "MyFitnessJourneyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F279EAD1A802E2400A9A94E /* Debug */,
+				2F279EAE1A802E2400A9A94E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F279E7B1A802E2400A9A94E /* Project object */;
+}

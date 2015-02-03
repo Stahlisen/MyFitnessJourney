@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CFAF7AD0-4AC1-4809-BEBB-0EF76CC82F55</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MyFitnessJourney</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FC033B37B265C88A6C636633D15DEA07E7517616</key>
+		<string>https://github.com/Stahlisen/MyFitnessJourney.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MyFitnessJourney/MyFitnessJourney.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FC033B37B265C88A6C636633D15DEA07E7517616</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Stahlisen/MyFitnessJourney.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FC033B37B265C88A6C636633D15DEA07E7517616</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FC033B37B265C88A6C636633D15DEA07E7517616</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyFitnessJourney</string>
+		</dict>
+	</array>
+</dict>
+</plist>
