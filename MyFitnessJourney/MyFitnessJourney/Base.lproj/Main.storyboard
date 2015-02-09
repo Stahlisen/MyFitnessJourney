@@ -16,25 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6v-vC-cY6">
-                                <rect key="frame" x="64" y="20" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6v-vC-cY6">
+                                <rect key="frame" x="64" y="20" width="247" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecc-35-418">
-                                <rect key="frame" x="279" y="270" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLL-IQ-QH0">
+                                <rect key="frame" x="160" y="331" width="161" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLL-IQ-QH0">
-                                <rect key="frame" x="279" y="331" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xlu-A5-MwI" customClass="FBProfilePictureView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlu-A5-MwI" customClass="FBProfilePictureView">
                                 <rect key="frame" x="225" y="62" width="150" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -48,11 +42,21 @@
                                 <rect key="frame" x="80" y="429" width="200" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecc-35-418">
+                                <rect key="frame" x="176" y="269" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="W6v-vC-cY6"/>
+                                <exclude reference="aLL-IQ-QH0"/>
+                                <exclude reference="xlu-A5-MwI"/>
                                 <exclude reference="cl2-ce-m9D"/>
+                                <exclude reference="ecc-35-418"/>
                             </mask>
                         </variation>
                     </view>
@@ -62,6 +66,7 @@
                         <outlet property="lblUsername" destination="ecc-35-418" id="7DA-8k-mBj"/>
                         <outlet property="loginButton" destination="JoD-Aq-bHw" id="x8k-tt-wGP"/>
                         <outlet property="profilePicture" destination="xlu-A5-MwI" id="y2w-Qo-TaU"/>
+                        <segue destination="8rJ-Kc-sve" kind="modal" identifier="showHome" id="KQg-uD-XGY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sqh-k4-n4Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -152,6 +157,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="Home" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="lblemail" destination="zEq-FU-wV5" id="QVB-RE-45j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,4 +190,7 @@
         <image name="Home" width="30" height="30"/>
         <image name="first" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="KQg-uD-XGY"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "HomeViewController.h"
 
 @interface LoginViewController ()
 
@@ -29,7 +30,49 @@
     [self toggleHiddenState:YES];
     self.lblLoginStatus.text = @"";
     self.loginButton.readPermissions = @[@"public_profile", @"email"];
+    self.loginButton.delegate = self;
 
+}
+
+-(void)loginViewShowingLoggedInUser:(FBLoginView *)loginView{
+    self.lblLoginStatus.text = @"You are logged in.";
+    
+    [self toggleHiddenState:NO];
+}
+
+-(void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user{
+    NSLog(@"%@", user);
+    self.profilePicture.profileID = user.id;
+    self.lblUsername.text = user.name;
+    self.lblEmail.text = user.name;
+    NSLog(@"%@", [user objectForKey:@"email"]);
+    [self performSegueWithIdentifier:@"showHome" sender:self];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSLog(@"prepareForSegue: %@", segue.identifier);
+    
+    if ([segue.identifier isEqualToString:@"showHome"]) {
+        HomeViewController *Hvc = [segue destinationViewController];
+        Hvc.useremail = self.lblEmail.text;
+        NSLog(@"%@", Hvc.useremail );
+        
+    }
+}
+
+
+
+
+
+-(void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView{
+    self.lblLoginStatus.text = @"You are logged out";
+    
+    [self toggleHiddenState:YES];
+}
+
+-(void)loginView:(FBLoginView *)loginView handleError:(NSError *)error{
+    NSLog(@"%@", [error localizedDescription]);
 }
 
 - (void)didReceiveMemoryWarning {

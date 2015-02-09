@@ -14,8 +14,15 @@
 
 @implementation HomeViewController
 
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
+    self.lblemail.text = [NSString stringWithFormat: @"Welcome back %@", self.useremail];
+    NSLog(@"%@", self.useremail);
+    
     // Do any additional setup after loading the view.
 }
 

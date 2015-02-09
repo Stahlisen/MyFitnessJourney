@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeViewController : UIViewController
+@property (nonatomic, weak) NSString *useremail;
+
+@property (strong, nonatomic) IBOutlet UILabel *lblemail;
 
 @end
