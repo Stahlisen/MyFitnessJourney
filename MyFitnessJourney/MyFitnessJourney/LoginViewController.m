@@ -31,7 +31,7 @@
     self.lblLoginStatus.text = @"";
     self.loginButton.readPermissions = @[@"public_profile", @"email"];
     self.loginButton.delegate = self;
-
+     NSLog(@"Running viewdidLoad");
 }
 
 -(void)loginViewShowingLoggedInUser:(FBLoginView *)loginView{
@@ -41,26 +41,57 @@
 }
 
 -(void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user{
-    NSLog(@"%@", user);
-    self.profilePicture.profileID = user.id;
-    self.lblUsername.text = user.name;
-    self.lblEmail.text = user.name;
-    NSLog(@"%@", [user objectForKey:@"email"]);
-    [self performSegueWithIdentifier:@"showHome" sender:self];
+
+    int lol = 1;
+    NSLog(@"%d", lol + 1);
+    NSLog(@"Running fetcheduserinfo");
+    [self checkUserExistance:user.id];
+}
+
+-(void) checkUserExistance: (NSString *) userid {
+    PFQuery *query = [PFQuery queryWithClassName:@"User"];
+    [query whereKey:@"userid" equalTo:userid];
+    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        
+        
+        if (!object) {
+            
+            NSLog(@"User does not exist");
+            [self performSegueWithIdentifier:@"showHome" sender:self];
+        }
+        
+        else
+        {
+            NSLog(@"User exists");
+            [self performSegueWithIdentifier:@"showHome" sender:self];
+        }
+        
+        
+    }];
+    
+    
+    
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSLog(@"prepareForSegue: %@", segue.identifier);
+    
     
     if ([segue.identifier isEqualToString:@"showHome"]) {
-        HomeViewController *Hvc = [segue destinationViewController];
-        Hvc.useremail = self.lblEmail.text;
-        NSLog(@"%@", Hvc.useremail );
+        
+        UINavigationController *navController = (UINavigationController*)[segue destinationViewController];
+        HomeViewController *eventsController = [navController topViewController];
+        
+        
+      //  NSString * username = [[NSString alloc] initWithFormat:@"%@", username_tf.text];
+        //[eventsController setUsername:username];
+        
+      //  HomeViewController *hvc = [segue destinationViewController];
+       // hvc.useremail = self.lblEmail.text;
+        
         
     }
 }
-
 
 
 

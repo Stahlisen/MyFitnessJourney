@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <FacebookSDK/FacebookSDK.h>
+#import <Parse/Parse.h>
 
 @interface LoginViewController : UIViewController <FBLoginViewDelegate>
 
@@ -16,6 +17,8 @@
 @property (nonatomic, weak) IBOutlet UILabel *lblUsername;
 @property (nonatomic, weak) IBOutlet UILabel *lblEmail;
 @property (nonatomic, weak) IBOutlet FBProfilePictureView *profilePicture;
+
+- (void)checkUserExistance: (NSString *) userid;
 
 
 @end

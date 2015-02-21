@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface HomeViewController : UIViewController
-@property (nonatomic, weak) NSString *useremail;
+@property (nonatomic, weak) NSString *userid;
 
-@property (strong, nonatomic) IBOutlet UILabel *lblemail;
+@property (strong, nonatomic) IBOutlet UILabel *lblName;
 
 @end

@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 #import <FacebookSDK/FacebookSDK.h>
+#import <Parse/Parse.h>
+#import "LoginViewController.h"
+#import "HomeViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -23,9 +27,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [Parse enableLocalDatastore];
     
-    [FBLoginView class];
-    [FBProfilePictureView class];
+    // Initialize Parse.
+    [Parse setApplicationId:@"kWv63EFDTqkHDZgJN9dSxbwyEKYk16PhhSYhNRvB"
+                  clientKey:@"JV2kodkeVrTrAi0N5UpETxrGOT53BDG2Qz9lONTI"];
+    
+    // [Optional] Track statistics around application opens.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    
+    
+    //[FBLoginView class];
+        
+
+ //   [FBProfilePictureView class];
+
+    
     
     return YES;
 }
