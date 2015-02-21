@@ -17,7 +17,7 @@
 		2F279EB41A80373900A9A94E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F279EB31A80373900A9A94E /* HomeViewController.m */; };
 		2F279EB71A80376C00A9A94E /* JourneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F279EB61A80376C00A9A94E /* JourneyViewController.m */; };
 		2F279FEC1A8039BD00A9A94E /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F279FEB1A8039BD00A9A94E /* FacebookSDK.framework */; };
-		2F5E5C001A8A3CFC00F27E16 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5E5BFF1A8A3CFC00F27E16 /* Parse.framework */; };
+		2F5E5C001A8A3CFC00F27E16 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5E5BFF1A8A3CFC00F27E16 /* Parse.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		2F5E5C021A8A3DDD00F27E16 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5E5C011A8A3DDD00F27E16 /* AudioToolbox.framework */; };
 		2F5E5C041A8A3DE400F27E16 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5E5C031A8A3DE400F27E16 /* CFNetwork.framework */; };
 		2F5E5C061A8A3DEC00F27E16 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5E5C051A8A3DEC00F27E16 /* CoreGraphics.framework */; };
@@ -29,6 +29,7 @@
 		2F5E5C121A8A3E2000F27E16 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5E5C111A8A3E2000F27E16 /* SystemConfiguration.framework */; };
 		2F5E5C141A8A3E2900F27E16 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5E5C131A8A3E2900F27E16 /* libz.dylib */; };
 		2F5E5C161A8A3E3900F27E16 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5E5C151A8A3E3900F27E16 /* libsqlite3.dylib */; };
+		2F98EFC61A99262F0027C421 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F98EFC51A99262F0027C421 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		2F5E5C111A8A3E2000F27E16 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2F5E5C131A8A3E2900F27E16 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		2F5E5C151A8A3E3900F27E16 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		2F98EFC51A99262F0027C421 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Downloads/parse-library-1.6.3/Parse.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F98EFC61A99262F0027C421 /* Parse.framework in Frameworks */,
 				2F5E5C161A8A3E3900F27E16 /* libsqlite3.dylib in Frameworks */,
 				2F5E5C141A8A3E2900F27E16 /* libz.dylib in Frameworks */,
 				2F5E5C121A8A3E2000F27E16 /* SystemConfiguration.framework in Frameworks */,
@@ -108,6 +111,7 @@
 		2F279E7A1A802E2300A9A94E = {
 			isa = PBXGroup;
 			children = (
+				2F98EFC51A99262F0027C421 /* Parse.framework */,
 				2F5E5C151A8A3E3900F27E16 /* libsqlite3.dylib */,
 				2F5E5C131A8A3E2900F27E16 /* libz.dylib */,
 				2F5E5C111A8A3E2000F27E16 /* SystemConfiguration.framework */,
@@ -413,6 +417,7 @@
 					"$(inherited)",
 					/Users/fredrikstahl/Documents/FacebookSDK,
 					"/Users/fredrikstahl/Downloads/parse-library-1.6.2",
+					"/Users/fredrikstahl/Downloads/parse-library-1.6.3",
 				);
 				INFOPLIST_FILE = MyFitnessJourney/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -428,6 +433,7 @@
 					"$(inherited)",
 					/Users/fredrikstahl/Documents/FacebookSDK,
 					"/Users/fredrikstahl/Downloads/parse-library-1.6.2",
+					"/Users/fredrikstahl/Downloads/parse-library-1.6.3",
 				);
 				INFOPLIST_FILE = MyFitnessJourney/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
