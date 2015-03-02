@@ -61,14 +61,14 @@
     PFQuery *query1 = [PFQuery queryWithClassName:@"User"];
    // [query1 whereKey:@"goal" equalTo:goal];
     
-    PFObject *post = query1[@"goal"];
+    //PFObject *post = query1[@"goal"];
     
-    [post fetchIfNeededInBackgroundWithBlock:^(PFObject *post, NSError *error) {
+  /*  [post fetchIfNeededInBackgroundWithBlock:^(PFObject *post, NSError *error) {
         NSString *title = post[@"objectId"];
         NSLog(@"%d", title);
         // do something with your title variable
     }];
-
+*/
     
    /* PFQuery *goalQuery = [goalForUser query];
     

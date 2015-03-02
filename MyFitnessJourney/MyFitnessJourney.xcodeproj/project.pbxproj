@@ -30,6 +30,9 @@
 		2F5E5C141A8A3E2900F27E16 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5E5C131A8A3E2900F27E16 /* libz.dylib */; };
 		2F5E5C161A8A3E3900F27E16 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5E5C151A8A3E3900F27E16 /* libsqlite3.dylib */; };
 		2F98EFC61A99262F0027C421 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F98EFC51A99262F0027C421 /* Parse.framework */; };
+		2F98EFC91A994CB90027C421 /* UserSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F98EFC81A994CB90027C421 /* UserSignUpViewController.m */; };
+		2F98EFCC1A99FD510027C421 /* SetGoalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F98EFCB1A99FD510027C421 /* SetGoalViewController.m */; };
+		2F98EFCF1A9CB6190027C421 /* SetDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F98EFCE1A9CB6190027C421 /* SetDateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,12 @@
 		2F5E5C131A8A3E2900F27E16 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		2F5E5C151A8A3E3900F27E16 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		2F98EFC51A99262F0027C421 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Downloads/parse-library-1.6.3/Parse.framework"; sourceTree = "<group>"; };
+		2F98EFC71A994CB90027C421 /* UserSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSignUpViewController.h; sourceTree = "<group>"; };
+		2F98EFC81A994CB90027C421 /* UserSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSignUpViewController.m; sourceTree = "<group>"; };
+		2F98EFCA1A99FD510027C421 /* SetGoalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetGoalViewController.h; sourceTree = "<group>"; };
+		2F98EFCB1A99FD510027C421 /* SetGoalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetGoalViewController.m; sourceTree = "<group>"; };
+		2F98EFCD1A9CB6190027C421 /* SetDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetDateViewController.h; sourceTree = "<group>"; };
+		2F98EFCE1A9CB6190027C421 /* SetDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetDateViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +161,12 @@
 				2F279EB51A80376C00A9A94E /* JourneyViewController.h */,
 				2F279EB61A80376C00A9A94E /* JourneyViewController.m */,
 				2F279E931A802E2400A9A94E /* Main.storyboard */,
+				2F98EFC71A994CB90027C421 /* UserSignUpViewController.h */,
+				2F98EFC81A994CB90027C421 /* UserSignUpViewController.m */,
+				2F98EFCA1A99FD510027C421 /* SetGoalViewController.h */,
+				2F98EFCB1A99FD510027C421 /* SetGoalViewController.m */,
+				2F98EFCD1A9CB6190027C421 /* SetDateViewController.h */,
+				2F98EFCE1A9CB6190027C421 /* SetDateViewController.m */,
 				2F279E961A802E2400A9A94E /* Images.xcassets */,
 				2F279E981A802E2400A9A94E /* LaunchScreen.xib */,
 				2F279E861A802E2400A9A94E /* Supporting Files */,
@@ -290,8 +305,11 @@
 				2F279E8C1A802E2400A9A94E /* AppDelegate.m in Sources */,
 				2F279EB71A80376C00A9A94E /* JourneyViewController.m in Sources */,
 				2F279E891A802E2400A9A94E /* main.m in Sources */,
+				2F98EFCF1A9CB6190027C421 /* SetDateViewController.m in Sources */,
 				2F279EB11A8036CE00A9A94E /* LoginViewController.m in Sources */,
 				2F279EB41A80373900A9A94E /* HomeViewController.m in Sources */,
+				2F98EFC91A994CB90027C421 /* UserSignUpViewController.m in Sources */,
+				2F98EFCC1A99FD510027C421 /* SetGoalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

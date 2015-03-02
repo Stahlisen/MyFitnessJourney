@@ -1,9 +1,305 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DXo-KK-iQp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Fh2-IM-AJT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
+        <!--User Sign Up View Controller-->
+        <scene sceneID="hcA-la-P6i">
+            <objects>
+                <viewController id="Fh2-IM-AJT" customClass="UserSignUpViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rfi-GC-HKS"/>
+                        <viewControllerLayoutGuide type="bottom" id="yPT-eE-qBo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RDs-Ne-1b7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="30" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Rfc-P9-iJ6">
+                                <rect key="frame" x="219" y="251" width="162" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="6tk-kZ-jnS"/>
+                                    <constraint firstAttribute="height" constant="50" id="FNM-as-ZHg"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OLG-66-AHX">
+                                <rect key="frame" x="223" y="366" width="162" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Wke-TB-g7l"/>
+                                    <constraint firstAttribute="width" constant="162" id="qni-zC-Bg4"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter the following:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltr-EJ-vrY">
+                                <rect key="frame" x="147" y="165" width="360" height="129"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zof-XI-tMm">
+                                <rect key="frame" x="221" y="355" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cP2-j7-8Nh">
+                                <rect key="frame" x="262" y="323" width="77" height="20"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgz-kR-p1M">
+                                <rect key="frame" x="259" y="223" width="82" height="20"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rub-m0-F8K">
+                                <rect key="frame" x="276" y="443" width="49" height="20"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1SY-dP-73P">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Step 1: User settings" id="Psm-GX-Bx3">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="ZEo-su-o0h"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Next" id="gOn-N4-TW8">
+                                            <connections>
+                                                <action selector="registerUser:" destination="Fh2-IM-AJT" id="892-ET-mMA"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your fitness journey matters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0d-Y1-C2e">
+                                <rect key="frame" x="154" y="124" width="249" height="21"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Italic" family="Trebuchet MS" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lHP-yy-Dza">
+                                <rect key="frame" x="223" y="483" width="162" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="HN1-LS-os6"/>
+                                    <constraint firstAttribute="height" constant="50" id="XY0-V4-TQ1"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyFitnessJourney" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xix-SS-XSi">
+                                <rect key="frame" x="178" y="38" width="244" height="87"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="31"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter user details:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZe-Ji-Rsf">
+                                <rect key="frame" x="223" y="133" width="181" height="64"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyFitnessJourney" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUS-ov-0Ff">
+                                <rect key="frame" x="120" y="28" width="360" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129" id="Otm-Xo-mdW"/>
+                                    <constraint firstAttribute="width" constant="360" id="wu0-1x-GXk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="38"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="OLG-66-AHX" secondAttribute="centerY" constant="-91" id="0Jt-xq-Ss8"/>
+                            <constraint firstItem="Rfc-P9-iJ6" firstAttribute="leading" secondItem="Dgz-kR-p1M" secondAttribute="leading" constant="-40" id="0yc-52-sZu"/>
+                            <constraint firstItem="Rfc-P9-iJ6" firstAttribute="top" secondItem="Dgz-kR-p1M" secondAttribute="bottom" constant="8" symbolic="YES" id="4GB-rN-Lfs"/>
+                            <constraint firstAttribute="trailing" secondItem="1SY-dP-73P" secondAttribute="trailing" id="4R6-2M-evp"/>
+                            <constraint firstAttribute="centerX" secondItem="p0d-Y1-C2e" secondAttribute="centerX" constant="52.5" id="7n4-77-0Ta"/>
+                            <constraint firstAttribute="centerY" secondItem="lHP-yy-Dza" secondAttribute="centerY" constant="-208" id="AHV-Bx-zYX"/>
+                            <constraint firstAttribute="centerX" secondItem="SZe-Ji-Rsf" secondAttribute="centerX" constant="-13.5" id="Asx-Mp-bll"/>
+                            <constraint firstAttribute="centerX" secondItem="cP2-j7-8Nh" secondAttribute="centerX" constant="-0.5" id="Bs2-BQ-aLT"/>
+                            <constraint firstItem="SZe-Ji-Rsf" firstAttribute="top" secondItem="xix-SS-XSi" secondAttribute="bottom" constant="8" symbolic="YES" id="CA1-93-Eos"/>
+                            <constraint firstItem="SZe-Ji-Rsf" firstAttribute="leading" secondItem="OLG-66-AHX" secondAttribute="leading" id="EFK-yC-FCv"/>
+                            <constraint firstAttribute="centerX" secondItem="lHP-yy-Dza" secondAttribute="centerX" constant="-4" id="InC-XE-KG3"/>
+                            <constraint firstItem="xix-SS-XSi" firstAttribute="top" secondItem="rfi-GC-HKS" secondAttribute="bottom" constant="18" id="KnC-7u-nx0"/>
+                            <constraint firstAttribute="trailing" secondItem="1SY-dP-73P" secondAttribute="trailing" id="Ll2-GS-hW0"/>
+                            <constraint firstAttribute="centerX" secondItem="OLG-66-AHX" secondAttribute="centerX" constant="-4" id="NlO-ey-Ud7"/>
+                            <constraint firstAttribute="centerX" secondItem="Rub-m0-F8K" secondAttribute="centerX" constant="-0.5" id="PSt-va-VUv"/>
+                            <constraint firstItem="LUS-ov-0Ff" firstAttribute="trailing" secondItem="ltr-EJ-vrY" secondAttribute="trailing" id="QBn-h7-qDo"/>
+                            <constraint firstItem="1SY-dP-73P" firstAttribute="leading" secondItem="RDs-Ne-1b7" secondAttribute="leading" id="WpC-L7-Ysh"/>
+                            <constraint firstAttribute="centerY" secondItem="Rub-m0-F8K" secondAttribute="centerY" constant="-153" id="Yhz-bP-6on"/>
+                            <constraint firstAttribute="centerY" secondItem="xix-SS-XSi" secondAttribute="centerY" constant="218.5" id="ahM-pY-8uu"/>
+                            <constraint firstItem="1SY-dP-73P" firstAttribute="bottom" secondItem="yPT-eE-qBo" secondAttribute="top" id="dN8-vD-6MR"/>
+                            <constraint firstItem="1SY-dP-73P" firstAttribute="leading" secondItem="RDs-Ne-1b7" secondAttribute="leading" id="dyw-SX-2sD"/>
+                            <constraint firstItem="LUS-ov-0Ff" firstAttribute="centerX" secondItem="1SY-dP-73P" secondAttribute="centerX" id="g2T-6x-70j"/>
+                            <constraint firstAttribute="centerY" secondItem="cP2-j7-8Nh" secondAttribute="centerY" constant="-33" id="mLO-Of-aCV"/>
+                            <constraint firstAttribute="centerX" secondItem="Dgz-kR-p1M" secondAttribute="centerX" id="oQO-Ni-fLg"/>
+                            <constraint firstItem="LUS-ov-0Ff" firstAttribute="leading" secondItem="ltr-EJ-vrY" secondAttribute="leading" id="ojh-eY-5k4"/>
+                            <constraint firstAttribute="centerY" secondItem="p0d-Y1-C2e" secondAttribute="centerY" constant="164.5" id="prA-4z-fxD"/>
+                            <constraint firstItem="ltr-EJ-vrY" firstAttribute="top" secondItem="LUS-ov-0Ff" secondAttribute="bottom" constant="8" symbolic="YES" id="raZ-iO-vxa"/>
+                            <constraint firstAttribute="centerY" secondItem="ltr-EJ-vrY" secondAttribute="centerY" constant="70.5" id="sbj-Jo-BNh"/>
+                            <constraint firstAttribute="centerY" secondItem="Dgz-kR-p1M" secondAttribute="centerY" constant="67" id="uZz-gE-8cP"/>
+                            <constraint firstAttribute="centerX" secondItem="ltr-EJ-vrY" secondAttribute="centerX" constant="-54" id="unO-ze-OCP"/>
+                            <constraint firstItem="LUS-ov-0Ff" firstAttribute="top" secondItem="rfi-GC-HKS" secondAttribute="bottom" constant="8" symbolic="YES" id="vDy-xF-OFS"/>
+                            <constraint firstItem="Dgz-kR-p1M" firstAttribute="top" secondItem="SZe-Ji-Rsf" secondAttribute="bottom" constant="26" id="xDU-TV-f2X"/>
+                            <constraint firstItem="xix-SS-XSi" firstAttribute="centerX" secondItem="Dgz-kR-p1M" secondAttribute="centerX" id="xk5-Dw-bPW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ltr-EJ-vrY"/>
+                                <exclude reference="Zof-XI-tMm"/>
+                                <exclude reference="p0d-Y1-C2e"/>
+                                <exclude reference="LUS-ov-0Ff"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="LcD-ot-wPt"/>
+                    <connections>
+                        <outlet property="emailfield" destination="lHP-yy-Dza" id="b0Z-dv-KIs"/>
+                        <outlet property="passwordfield" destination="OLG-66-AHX" id="tog-2n-94g"/>
+                        <outlet property="usernamefield" destination="Rfc-P9-iJ6" id="ezw-HJ-RBE"/>
+                        <segue destination="AG5-Sv-hbm" kind="presentation" identifier="showSetGoal" id="4gf-0C-HxX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LjZ-lU-CJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1588" y="-703"/>
+        </scene>
+        <!--Set Goal View Controller-->
+        <scene sceneID="gwi-6Q-L1K">
+            <objects>
+                <viewController id="AG5-Sv-hbm" customClass="SetGoalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YYP-XY-ekL"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nvd-FR-yyn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="54y-db-eqh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqN-xs-S0l">
+                                <rect key="frame" x="253" y="71" width="95" height="27"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7k-og-Rli">
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's get started" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbT-pc-ube">
+                                <rect key="frame" x="216" y="182" width="168" height="27"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eG3-zA-uOB">
+                                <rect key="frame" x="129" y="371" width="320" height="162"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your goal weight:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydl-23-1oN">
+                                <rect key="frame" x="184" y="336" width="243" height="27"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQZ-NW-z7e">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Step 2: Set your goal weight" id="W4m-8D-1eP">
+                                        <barButtonItem key="rightBarButtonItem" title="Finish" id="u56-Ci-Ek6">
+                                            <connections>
+                                                <action selector="registerGoalWeight:" destination="AG5-Sv-hbm" id="vET-h2-PAK"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We don't wanna keep you here for too long, so let's get started!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEi-CQ-qHJ">
+                                <rect key="frame" x="28" y="223" width="544" height="23"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="eG3-zA-uOB" secondAttribute="centerX" constant="11" id="0in-7B-w8b"/>
+                            <constraint firstAttribute="centerX" secondItem="cQZ-NW-z7e" secondAttribute="centerX" id="3ou-Ij-rYa"/>
+                            <constraint firstAttribute="centerX" secondItem="cEi-CQ-qHJ" secondAttribute="centerX" id="5rY-1e-neo"/>
+                            <constraint firstAttribute="centerY" secondItem="ydl-23-1oN" secondAttribute="centerY" constant="-49.5" id="8d1-aA-Dbo"/>
+                            <constraint firstAttribute="centerX" secondItem="HbT-pc-ube" secondAttribute="centerX" id="8g1-gI-Cma"/>
+                            <constraint firstItem="cQZ-NW-z7e" firstAttribute="leading" secondItem="54y-db-eqh" secondAttribute="leading" id="EBa-nP-ucl"/>
+                            <constraint firstAttribute="centerY" secondItem="cEi-CQ-qHJ" secondAttribute="centerY" constant="65.5" id="LYe-vC-jcD"/>
+                            <constraint firstAttribute="centerX" secondItem="WqN-xs-S0l" secondAttribute="centerX" constant="-0.5" id="Ptj-Jg-APH"/>
+                            <constraint firstAttribute="centerX" secondItem="ydl-23-1oN" secondAttribute="centerX" constant="-5.5" id="a0w-ti-i35"/>
+                            <constraint firstAttribute="centerY" secondItem="eG3-zA-uOB" secondAttribute="centerY" constant="-152" id="euB-52-ZJC"/>
+                            <constraint firstAttribute="centerX" secondItem="b7k-og-Rli" secondAttribute="centerX" constant="-4.5" id="hID-yo-9ax"/>
+                            <constraint firstAttribute="centerY" secondItem="b7k-og-Rli" secondAttribute="centerY" constant="167.5" id="hM3-Vq-1JT"/>
+                            <constraint firstAttribute="centerY" secondItem="WqN-xs-S0l" secondAttribute="centerY" constant="215.5" id="iMP-Y3-dy3"/>
+                            <constraint firstAttribute="centerY" secondItem="HbT-pc-ube" secondAttribute="centerY" constant="105" id="nQ9-83-taG"/>
+                            <constraint firstItem="cQZ-NW-z7e" firstAttribute="bottom" secondItem="Nvd-FR-yyn" secondAttribute="top" id="rKu-ty-glw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="cEi-CQ-qHJ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="usernamelbl" destination="b7k-og-Rli" id="NiW-an-Yd5"/>
+                        <outlet property="weightpicker" destination="eG3-zA-uOB" id="lZa-Dh-Lrk"/>
+                        <segue destination="oeo-Eg-WGH" kind="presentation" identifier="showSetDate" id="WAc-kQ-KpD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ors-pY-33j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-836" y="-692"/>
+        </scene>
+        <!--Set Date View Controller-->
+        <scene sceneID="zLd-lX-vc1">
+            <objects>
+                <viewController id="oeo-Eg-WGH" customClass="SetDateViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iMx-Bk-k9h"/>
+                        <viewControllerLayoutGuide type="bottom" id="sT0-4N-cNr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dhS-Fa-if1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We're almost done.." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWk-g6-fkt">
+                                <rect key="frame" x="196" y="203" width="208" height="27"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's pick a deadline for that goal of yours." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtT-SZ-ifM">
+                                <rect key="frame" x="78" y="329" width="445" height="27"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="tg0-qB-eT6">
+                                <rect key="frame" x="0.0" y="387" width="600" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="446477740.978504">
+                                    <!--2015-02-24 13:35:40 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uYr-hG-cyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="-684"/>
+        </scene>
         <!--Login-->
         <scene sceneID="OxC-ej-D8o">
             <objects>
@@ -45,15 +341,20 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MyFitnessJourney" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNb-1A-vef">
                                 <rect key="frame" x="25" y="65" width="360" height="129"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="38"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your fitness journey matters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kH3-wG-JRd">
                                 <rect key="frame" x="56" y="173" width="249" height="21"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS-Italic" family="Trebuchet MS" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2s-Ev-5kz">
+                                <rect key="frame" x="112" y="324" width="137" height="46"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="28"/>
+                                <state key="normal" title="Signup">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecc-35-418">
                                 <rect key="frame" x="176" y="269" width="122" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -61,7 +362,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="W6v-vC-cY6"/>
@@ -102,7 +403,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zpC-qS-qP4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="732" y="-1090"/>
+            <point key="canvasLocation" x="1544" y="-1090"/>
         </scene>
         <!--MyJourney-->
         <scene sceneID="LAs-qF-vhl">
@@ -129,7 +430,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rnN-EV-NSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="730" y="-424"/>
+            <point key="canvasLocation" x="1542" y="-424"/>
         </scene>
         <!--MyFitnessJourney-->
         <scene sceneID="wg7-f3-ORb">
