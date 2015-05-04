@@ -36,6 +36,26 @@
     // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil]
+     setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]
+       }
+     forState:UIControlStateNormal];
+    
+    [[UITabBar appearance] setTintColor:[UIColor colorWithRed:129.0/255.0 green:181.0/255.0 blue:20.0/255.0 alpha:1.0]];
+    [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
+    
+    
+    [[UINavigationBar appearance]setBarTintColor:[UIColor colorWithRed:0.62 green:0.82 blue:0.10 alpha:1.0]];
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8];
+    shadow.shadowOffset = CGSizeMake(0, 0);
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor colorWithRed:255.0f/255.0f green:255.0f/255.0f blue:255.0f/255.0f alpha:1.0], NSForegroundColorAttributeName,
+                                                           shadow, NSShadowAttributeName,
+                                                           [UIFont fontWithName:@"Thonburi" size:21.0], NSFontAttributeName, nil]];
+    
+    
     
     
     //[FBLoginView class];

@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
+#import "HomeViewController.h"
 
 @interface SetDateViewController : UIViewController
+
+
+@property (weak, nonatomic) IBOutlet UIDatePicker *datepicker;
+
+
 
 @end

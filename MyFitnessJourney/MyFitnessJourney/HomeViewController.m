@@ -15,101 +15,96 @@
 
 @implementation HomeViewController
 
-
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.userid = @"fred123";
-    
-    
-    PFQuery *query = [PFQuery queryWithClassName:@"User"];
-    
-    [query whereKey:@"userid" equalTo:self.userid];
+    [self loadUserData];
+}
 
-    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+//Loading userdata from PFObject
+- (void) loadUserData {
+    
+    //Get username of current user
+    NSString *username = [NSString stringWithFormat:@"%@",[[PFUser currentUser]valueForKey:@"username"]];
+    
+    self.lblusername.text = [@"Welcome " stringByAppendingString: username];
+    
+    //Alloc and initiate array to store all weighins
+    self.Weighins = [[NSMutableArray alloc] init];
+    
+    //Get all weighins for the current user from PFQuery
+    PFQuery *query = [PFQuery queryWithClassName:@"Weighin"];
+    [query whereKey:@"user" equalTo:[PFUser currentUser]];
+    NSArray *usersGoal = [query findObjects];
+    for (unsigned i = 0; i < [usersGoal count]; i++) {
         
-        if (!object) {
+        Weighin *weighin = [Weighin new];
+        weighin.date = [usersGoal[i] createdAt];
+        weighin.weight = [usersGoal[i] objectForKey:@"weight"];
+        
+        PFFile *imageFile = [usersGoal[i] objectForKey:@"image"];
+        [imageFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
+            if (!error) {
+                weighin.image = [UIImage imageWithData:data];
+            } if (error) {
+                NSLog(@"there was an error getting the image");
+            }
+        }];
+        
+        //Add all weighin objects to array
+        [self.Weighins addObject: weighin];
+        
+        NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+        [dateFormat setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+        
+    }
+    //Block to order the weighins by date
+    NSSortDescriptor *firstDescriptor = [[NSSortDescriptor alloc]
+                                         initWithKey:@"date" ascending:NO];
+    NSArray * descriptors = [NSArray arrayWithObjects:firstDescriptor, nil];
+    NSArray * sortedArray = [self.Weighins sortedArrayUsingDescriptors:descriptors];
+    self.Weighins = sortedArray;
+    
+    
+    self.lblcurrentweight.text = [[[[self.Weighins firstObject] weight] stringValue] stringByAppendingString:@" kg"];
+    
+    //Get goal for the current user from PFObject
+    PFQuery *queryGoal = [PFQuery queryWithClassName:@"Goal"];
+    [queryGoal whereKey:@"user" equalTo:[PFUser currentUser]];
+    [queryGoal getFirstObjectInBackgroundWithBlock:^(PFObject *goal, NSError *error) {
+        
+        if (!error) {
             
-            NSLog(@"User does not exist");
+            NSString *goalweight = [NSString stringWithFormat:@"%@", [goal valueForKey:@"weight"]];
+            self.lblgoalweight.text = [goalweight stringByAppendingString:@" kg"];
+            NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+            [dateFormat setDateFormat:@"yyyy-MM-dd"];
             
-        }
-        
-        else
-        {
-            NSLog(@"User exists");
-            NSLog(@"%@", object.objectId);
-            NSString *name = object [@"Name"];
-            self.lblName.text = name;
-        
-        }
-        
-        
-    }];
-    
-    PFObject *user = [PFObject objectWithoutDataWithClassName:@"User" objectId:@"yGmwG6ak5J"];
-    
-    PFObject *goal = [PFObject objectWithoutDataWithClassName:@"Goal" objectId:@"FhS6R3WFBE"];
-    
-    //[user setObject: goal forKey:@"goal"];
-   // [goal setObject: user forKey:@"author"];
-    
-    //user[@"Child"] = [PFObject objectWithoutDataWithClassName:@"Goal" objectId:@"FhS6R3WFBE"];
-    
-   // [user saveInBackground];
-   
-    PFQuery *query1 = [PFQuery queryWithClassName:@"User"];
-   // [query1 whereKey:@"goal" equalTo:goal];
-    
-    //PFObject *post = query1[@"goal"];
-    
-  /*  [post fetchIfNeededInBackgroundWithBlock:^(PFObject *post, NSError *error) {
-        NSString *title = post[@"objectId"];
-        NSLog(@"%d", title);
-        // do something with your title variable
-    }];
-*/
-    
-   /* PFQuery *goalQuery = [goalForUser query];
-    
-    [goalQuery findObjects];
-    */
-    
-    
-/*
-    self.lblemail.text = [NSString stringWithFormat: @"Welcome back %@", self.useremail];
-    
-    PFObject *newUser = [PFObject objectWithClassName:@"User"];
-    newUser[@"userid"] = @"Heuehue";
-    newUser[@"Name"] = @"Fredrik";
-    newUser[@"Secondname"] = @"Ståhl";
+            NSDate *dategoal = [goal valueForKey:@"goaldate"];
+            
+            self.lblgoaldate.text = [NSString stringWithFormat:@"%@", [dateFormat stringFromDate: dategoal]];
+            
+            //Block to get remaining days until goal date
+            NSDateFormatter *df = [NSDateFormatter new];
+            [df setDateFormat:@"dd MM yyyy"];
+            NSString *TodayString = [df stringFromDate:[NSDate date]];
+            NSString *TargetDateString = [df stringFromDate:dategoal];
+            NSTimeInterval time = [[df dateFromString:TargetDateString] timeIntervalSinceDate:[df dateFromString:TodayString]];
+            int days = time / 60 / 60/ 24;
+            NSString *daysuntil = [NSString stringWithFormat: @"%ld", (long)days];
 
-    [newUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (succeeded) {
-            NSLog(@"Succeeded");
-            // The object has been saved.
+            self.lblremaining.text = [daysuntil stringByAppendingString:@" days"];
+            self.lbldaystogo.text = [daysuntil stringByAppendingString:@" days to go!"];
         } else {
-            // There was a problem, check error.description
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
         }
     }];
- */
     
-    // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

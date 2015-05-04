@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
+#import "DetailWeightViewController.h"
 
 @interface JourneyViewController : UITableViewController
+
+
+@property (nonatomic,strong) NSMutableArray *Weighins;
+
 
 @end

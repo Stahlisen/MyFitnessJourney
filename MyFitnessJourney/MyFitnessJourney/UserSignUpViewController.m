@@ -16,12 +16,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.usernamefield.delegate = self;
+    self.passwordfield.delegate = self;
+    self.emailfield.delegate = self;
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField{
+    
+    [textField resignFirstResponder];
+    return YES;
 }
 
 
@@ -33,6 +42,7 @@
         user.username = self.usernamefield.text;
         user.password = self.passwordfield.text;
         user.email = self.emailfield.text;
+        
         
 
         

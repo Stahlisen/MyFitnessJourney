@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F11F9791AD7C64E00D48B01 /* NewWeighinTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11F9781AD7C64E00D48B01 /* NewWeighinTableViewController.m */; };
+		2F11F97C1AD7D02700D48B01 /* SelectImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F11F97B1AD7D02700D48B01 /* SelectImageViewController.m */; };
 		2F279E891A802E2400A9A94E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F279E881A802E2400A9A94E /* main.m */; };
 		2F279E8C1A802E2400A9A94E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F279E8B1A802E2400A9A94E /* AppDelegate.m */; };
 		2F279E951A802E2400A9A94E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F279E931A802E2400A9A94E /* Main.storyboard */; };
 		2F279E971A802E2400A9A94E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F279E961A802E2400A9A94E /* Images.xcassets */; };
 		2F279E9A1A802E2400A9A94E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F279E981A802E2400A9A94E /* LaunchScreen.xib */; };
 		2F279EA61A802E2400A9A94E /* MyFitnessJourneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F279EA51A802E2400A9A94E /* MyFitnessJourneyTests.m */; };
-		2F279EB11A8036CE00A9A94E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F279EB01A8036CE00A9A94E /* LoginViewController.m */; };
 		2F279EB41A80373900A9A94E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F279EB31A80373900A9A94E /* HomeViewController.m */; };
 		2F279EB71A80376C00A9A94E /* JourneyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F279EB61A80376C00A9A94E /* JourneyViewController.m */; };
 		2F279FEC1A8039BD00A9A94E /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F279FEB1A8039BD00A9A94E /* FacebookSDK.framework */; };
-		2F5E5C001A8A3CFC00F27E16 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5E5BFF1A8A3CFC00F27E16 /* Parse.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		2F5E5C021A8A3DDD00F27E16 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5E5C011A8A3DDD00F27E16 /* AudioToolbox.framework */; };
 		2F5E5C041A8A3DE400F27E16 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5E5C031A8A3DE400F27E16 /* CFNetwork.framework */; };
 		2F5E5C061A8A3DEC00F27E16 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5E5C051A8A3DEC00F27E16 /* CoreGraphics.framework */; };
@@ -29,10 +29,15 @@
 		2F5E5C121A8A3E2000F27E16 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5E5C111A8A3E2000F27E16 /* SystemConfiguration.framework */; };
 		2F5E5C141A8A3E2900F27E16 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5E5C131A8A3E2900F27E16 /* libz.dylib */; };
 		2F5E5C161A8A3E3900F27E16 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5E5C151A8A3E3900F27E16 /* libsqlite3.dylib */; };
-		2F98EFC61A99262F0027C421 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F98EFC51A99262F0027C421 /* Parse.framework */; };
 		2F98EFC91A994CB90027C421 /* UserSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F98EFC81A994CB90027C421 /* UserSignUpViewController.m */; };
 		2F98EFCC1A99FD510027C421 /* SetGoalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F98EFCB1A99FD510027C421 /* SetGoalViewController.m */; };
 		2F98EFCF1A9CB6190027C421 /* SetDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F98EFCE1A9CB6190027C421 /* SetDateViewController.m */; };
+		2FC032F41AD2D2EF00C2A9E4 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC032F31AD2D2EF00C2A9E4 /* StartViewController.m */; };
+		2FC032FA1AD41B8800C2A9E4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC032F91AD41B8800C2A9E4 /* Parse.framework */; };
+		2FC032FD1AD6C33700C2A9E4 /* Weighin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC032FC1AD6C33700C2A9E4 /* Weighin.m */; };
+		2FD1955C1AE3DDCF008EBC29 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1955B1AE3DDCF008EBC29 /* CameraViewController.m */; };
+		2FD1955F1AE45021008EBC29 /* DetailWeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1955E1AE45021008EBC29 /* DetailWeightViewController.m */; };
+		2FD195621AE462B4008EBC29 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD195611AE462B4008EBC29 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F11F9771AD7C64E00D48B01 /* NewWeighinTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewWeighinTableViewController.h; sourceTree = "<group>"; };
+		2F11F9781AD7C64E00D48B01 /* NewWeighinTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewWeighinTableViewController.m; sourceTree = "<group>"; };
+		2F11F97A1AD7D02700D48B01 /* SelectImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectImageViewController.h; sourceTree = "<group>"; };
+		2F11F97B1AD7D02700D48B01 /* SelectImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectImageViewController.m; sourceTree = "<group>"; };
 		2F279E831A802E2400A9A94E /* MyFitnessJourney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFitnessJourney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F279E871A802E2400A9A94E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F279E881A802E2400A9A94E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -57,14 +66,11 @@
 		2F279E9F1A802E2400A9A94E /* MyFitnessJourneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFitnessJourneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F279EA41A802E2400A9A94E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F279EA51A802E2400A9A94E /* MyFitnessJourneyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFitnessJourneyTests.m; sourceTree = "<group>"; };
-		2F279EAF1A8036CE00A9A94E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		2F279EB01A8036CE00A9A94E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		2F279EB21A80373900A9A94E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		2F279EB31A80373900A9A94E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		2F279EB51A80376C00A9A94E /* JourneyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JourneyViewController.h; sourceTree = "<group>"; };
 		2F279EB61A80376C00A9A94E /* JourneyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JourneyViewController.m; sourceTree = "<group>"; };
 		2F279FEB1A8039BD00A9A94E /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
-		2F5E5BFF1A8A3CFC00F27E16 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Downloads/parse-library-1.6.2/Parse.framework"; sourceTree = "<group>"; };
 		2F5E5C011A8A3DDD00F27E16 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2F5E5C031A8A3DE400F27E16 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		2F5E5C051A8A3DEC00F27E16 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -76,13 +82,23 @@
 		2F5E5C111A8A3E2000F27E16 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2F5E5C131A8A3E2900F27E16 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		2F5E5C151A8A3E3900F27E16 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		2F98EFC51A99262F0027C421 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Downloads/parse-library-1.6.3/Parse.framework"; sourceTree = "<group>"; };
 		2F98EFC71A994CB90027C421 /* UserSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSignUpViewController.h; sourceTree = "<group>"; };
 		2F98EFC81A994CB90027C421 /* UserSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSignUpViewController.m; sourceTree = "<group>"; };
 		2F98EFCA1A99FD510027C421 /* SetGoalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetGoalViewController.h; sourceTree = "<group>"; };
 		2F98EFCB1A99FD510027C421 /* SetGoalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetGoalViewController.m; sourceTree = "<group>"; };
 		2F98EFCD1A9CB6190027C421 /* SetDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetDateViewController.h; sourceTree = "<group>"; };
 		2F98EFCE1A9CB6190027C421 /* SetDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetDateViewController.m; sourceTree = "<group>"; };
+		2FC032F21AD2D2EF00C2A9E4 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		2FC032F31AD2D2EF00C2A9E4 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		2FC032F91AD41B8800C2A9E4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Downloads/parse-library-1.6.3 (1)/Parse.framework"; sourceTree = "<group>"; };
+		2FC032FB1AD6C33700C2A9E4 /* Weighin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weighin.h; sourceTree = "<group>"; };
+		2FC032FC1AD6C33700C2A9E4 /* Weighin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weighin.m; sourceTree = "<group>"; };
+		2FD1955A1AE3DDCF008EBC29 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		2FD1955B1AE3DDCF008EBC29 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		2FD1955D1AE45021008EBC29 /* DetailWeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailWeightViewController.h; sourceTree = "<group>"; };
+		2FD1955E1AE45021008EBC29 /* DetailWeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailWeightViewController.m; sourceTree = "<group>"; };
+		2FD195601AE462B4008EBC29 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		2FD195611AE462B4008EBC29 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F98EFC61A99262F0027C421 /* Parse.framework in Frameworks */,
+				2FC032FA1AD41B8800C2A9E4 /* Parse.framework in Frameworks */,
 				2F5E5C161A8A3E3900F27E16 /* libsqlite3.dylib in Frameworks */,
 				2F5E5C141A8A3E2900F27E16 /* libz.dylib in Frameworks */,
 				2F5E5C121A8A3E2000F27E16 /* SystemConfiguration.framework in Frameworks */,
@@ -102,7 +118,6 @@
 				2F5E5C061A8A3DEC00F27E16 /* CoreGraphics.framework in Frameworks */,
 				2F5E5C041A8A3DE400F27E16 /* CFNetwork.framework in Frameworks */,
 				2F5E5C021A8A3DDD00F27E16 /* AudioToolbox.framework in Frameworks */,
-				2F5E5C001A8A3CFC00F27E16 /* Parse.framework in Frameworks */,
 				2F279FEC1A8039BD00A9A94E /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,7 +135,7 @@
 		2F279E7A1A802E2300A9A94E = {
 			isa = PBXGroup;
 			children = (
-				2F98EFC51A99262F0027C421 /* Parse.framework */,
+				2FC032F91AD41B8800C2A9E4 /* Parse.framework */,
 				2F5E5C151A8A3E3900F27E16 /* libsqlite3.dylib */,
 				2F5E5C131A8A3E2900F27E16 /* libz.dylib */,
 				2F5E5C111A8A3E2000F27E16 /* SystemConfiguration.framework */,
@@ -132,7 +147,6 @@
 				2F5E5C051A8A3DEC00F27E16 /* CoreGraphics.framework */,
 				2F5E5C031A8A3DE400F27E16 /* CFNetwork.framework */,
 				2F5E5C011A8A3DDD00F27E16 /* AudioToolbox.framework */,
-				2F5E5BFF1A8A3CFC00F27E16 /* Parse.framework */,
 				2F279FEB1A8039BD00A9A94E /* FacebookSDK.framework */,
 				2F279E851A802E2400A9A94E /* MyFitnessJourney */,
 				2F279EA21A802E2400A9A94E /* MyFitnessJourneyTests */,
@@ -152,15 +166,27 @@
 		2F279E851A802E2400A9A94E /* MyFitnessJourney */ = {
 			isa = PBXGroup;
 			children = (
+				2F11F9771AD7C64E00D48B01 /* NewWeighinTableViewController.h */,
+				2F11F9781AD7C64E00D48B01 /* NewWeighinTableViewController.m */,
 				2F279E8A1A802E2400A9A94E /* AppDelegate.h */,
+				2FC032FB1AD6C33700C2A9E4 /* Weighin.h */,
+				2FC032FC1AD6C33700C2A9E4 /* Weighin.m */,
 				2F279E8B1A802E2400A9A94E /* AppDelegate.m */,
-				2F279EAF1A8036CE00A9A94E /* LoginViewController.h */,
-				2F279EB01A8036CE00A9A94E /* LoginViewController.m */,
 				2F279EB21A80373900A9A94E /* HomeViewController.h */,
 				2F279EB31A80373900A9A94E /* HomeViewController.m */,
 				2F279EB51A80376C00A9A94E /* JourneyViewController.h */,
 				2F279EB61A80376C00A9A94E /* JourneyViewController.m */,
 				2F279E931A802E2400A9A94E /* Main.storyboard */,
+				2FD195601AE462B4008EBC29 /* SettingsViewController.h */,
+				2FD195611AE462B4008EBC29 /* SettingsViewController.m */,
+				2FD1955D1AE45021008EBC29 /* DetailWeightViewController.h */,
+				2FD1955E1AE45021008EBC29 /* DetailWeightViewController.m */,
+				2FD1955A1AE3DDCF008EBC29 /* CameraViewController.h */,
+				2FD1955B1AE3DDCF008EBC29 /* CameraViewController.m */,
+				2F11F97A1AD7D02700D48B01 /* SelectImageViewController.h */,
+				2F11F97B1AD7D02700D48B01 /* SelectImageViewController.m */,
+				2FC032F21AD2D2EF00C2A9E4 /* StartViewController.h */,
+				2FC032F31AD2D2EF00C2A9E4 /* StartViewController.m */,
 				2F98EFC71A994CB90027C421 /* UserSignUpViewController.h */,
 				2F98EFC81A994CB90027C421 /* UserSignUpViewController.m */,
 				2F98EFCA1A99FD510027C421 /* SetGoalViewController.h */,
@@ -302,12 +328,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F11F9791AD7C64E00D48B01 /* NewWeighinTableViewController.m in Sources */,
 				2F279E8C1A802E2400A9A94E /* AppDelegate.m in Sources */,
 				2F279EB71A80376C00A9A94E /* JourneyViewController.m in Sources */,
 				2F279E891A802E2400A9A94E /* main.m in Sources */,
+				2FC032F41AD2D2EF00C2A9E4 /* StartViewController.m in Sources */,
+				2FD1955F1AE45021008EBC29 /* DetailWeightViewController.m in Sources */,
 				2F98EFCF1A9CB6190027C421 /* SetDateViewController.m in Sources */,
-				2F279EB11A8036CE00A9A94E /* LoginViewController.m in Sources */,
 				2F279EB41A80373900A9A94E /* HomeViewController.m in Sources */,
+				2F11F97C1AD7D02700D48B01 /* SelectImageViewController.m in Sources */,
+				2FD1955C1AE3DDCF008EBC29 /* CameraViewController.m in Sources */,
+				2FC032FD1AD6C33700C2A9E4 /* Weighin.m in Sources */,
+				2FD195621AE462B4008EBC29 /* SettingsViewController.m in Sources */,
 				2F98EFC91A994CB90027C421 /* UserSignUpViewController.m in Sources */,
 				2F98EFCC1A99FD510027C421 /* SetGoalViewController.m in Sources */,
 			);
@@ -431,15 +463,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/fredrikstahl/Documents/FacebookSDK,
 					"/Users/fredrikstahl/Downloads/parse-library-1.6.2",
 					"/Users/fredrikstahl/Downloads/parse-library-1.6.3",
+					"/Users/fredrikstahl/Downloads/parse-library-1.7.1",
+					"/Users/fredrikstahl/Downloads/parse-library-1.6.3",
+					"(1)",
 				);
 				INFOPLIST_FILE = MyFitnessJourney/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -447,15 +485,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/fredrikstahl/Documents/FacebookSDK,
 					"/Users/fredrikstahl/Downloads/parse-library-1.6.2",
 					"/Users/fredrikstahl/Downloads/parse-library-1.6.3",
+					"/Users/fredrikstahl/Downloads/parse-library-1.7.1",
+					"/Users/fredrikstahl/Downloads/parse-library-1.6.3",
+					"(1)",
 				);
 				INFOPLIST_FILE = MyFitnessJourney/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

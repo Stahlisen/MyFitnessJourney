@@ -17,11 +17,63 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)registerDate:(id)sender
+{
+    PFUser *user = [PFUser currentUser];
+    
+    NSDate *pickerDate = [self.datepicker date];
+    
+    NSDateFormatter* df = [[NSDateFormatter alloc]init];
+    [df setDateFormat:@"MM/dd/yyyy"];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Goal"];
+    [query whereKey:@"user" equalTo:user];
+    [query getFirstObjectInBackgroundWithBlock:^(PFObject *goal, NSError *error) {
+    
+        if (!error) {
+           //The find succeeded
+            [goal setObject:pickerDate forKey:@"goaldate"];
+            [goal saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                
+                if (succeeded){
+                    NSLog(@"Object Uploaded!");
+                    [self performSegueWithIdentifier:@"showHome" sender:self];
+                    
+                }
+                else{
+                    NSString *errorString = [[error userInfo] objectForKey:@"error"];
+                    NSLog(@"Error: %@", errorString);
+                }
+                
+            }];
+            
+            
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier  isEqual: @"showHome"]) {
+        
+        HomeViewController *hvc = (HomeViewController *) segue.destinationViewController;
+        
+    } else {
+        
+        NSLog(@"Other identifier");
+    }
 }
 
 /*

@@ -89,12 +89,19 @@
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
     switch (component)
     {
+            /*
+             
+             case 0:
+             return [self.weightIntegerArray objectAtIndex:row];
+             break;
+             case 1:
+             return [self.weightDecimalArray objectAtIndex:row]*/
            
         case 0:
-            return [self.weightIntegerArray objectAtIndex:row];
+            return self.weightIntegerArray[row];
             break;
         case 1:
-            return [self.weightDecimalArray objectAtIndex:row];
+            return self.weightDecimalArray[row];
             break;
     }
     return nil;
@@ -138,11 +145,13 @@
     
     
     // Find goal weight for currentuser
+    /*
     PFQuery *query = [PFQuery queryWithClassName:@"Goal"];
     [query whereKey:@"user" equalTo:user];
     NSArray *usersGoal = [query findObjects];
     
     NSLog(@"%@", [usersGoal[0] objectForKey:@"weight"]);
+     */
     
     [self performSegueWithIdentifier:@"showSetDate" sender:self];
 }
